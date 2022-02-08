@@ -1,0 +1,44 @@
+            <!--form handling-->
+            <form method="POST" id="add_user">
+                <div class="new_user">
+                    <div class="form-group">
+                        <label for="name" class="text-light">Name</label>
+                        <input type="hidden" name="id" value="">
+                        <input type="text" name="name" value="" placeholder="AdminName">
+                    </div>
+                    <div class="form-group">
+                       <label for="text" class="text-light">Description</label>
+                       <textarea  rows="10" cols="30"></textarea>
+                     </div>
+                    <div class="form-group">
+                       <label for="lalitude" class="text-light">Latitude</label>
+                       <input type="hidden" name="id" value="">
+                       <input type="text" name="lalitude" value="" placeholder="0.000000">
+                    </div>
+                    <div class="form-group">
+                       <label for="longitude" class="text-light">Longitude</label>
+                       <input type="hidden" name="id" value="">
+                       <input type="text" name="longitude" value="" placeholder="0.000000">
+                    </div>
+                    <div class="form-group">
+                       <label for="adresse" class="text-light">Adress</label>
+                       <input type="hidden" name="id" value="">
+                       <input type="text" name="adresse" value="" placeholder="av-vil-cp">
+                    </div>
+                    <div class="form-group">
+                       <label for="sector" class="text-light">Sector</label>
+                       <div class="radio inline">
+                         <input type="radio" id="radio-2" name="sector" value="Public"> 
+                         <label for="radio-2" class="radio-label">Public</label>
+                       </div>
+                       <div class="radio inline">
+                         <input type="radio" id="radio-3" name="sector" value="Private"> 
+                         <label for="radio-3" class="radio-label">Private</label>
+                       </div>
+                     </div>
+                 <div class="form-group">
+                     <button type="submit" class="btn text-dark update">Save</button>
+                 </div>
+                 </div>
+                
+            </form>

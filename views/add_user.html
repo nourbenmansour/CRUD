@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Locations</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <!--Header-->
+    <Header id="header">
+        <nav>
+            <div class="container">
+                <div class="text-center">
+                    <a href="/" class="nav-brand text-dark">User Management System</a>
+                </div>
+            </div>
+        </nav>
+    </Header>
+    <!--/Header-->
+    <!--Main Site-->
+       <main id="site-main">
+           <div class="container">
+               <div class="box-nav d-flex-justify-between">
+                   <div class="filter">
+                       <a href="/"><i class="fas fa-angle-double-left"></i>All Admins</a>
+                   </div>
+               </div>
+               <div class="form-title text-center">
+                   <h2 class="text-dark">New Admin</h2>
+                   <span class="text-light">Use the below form to create a new account</span>
+               </div>
+               <!--form handling-->
+               <form method="POST" id="update_user">
+                   <div class="new_user">
+                       <div class="form-group">
+                           <label for="name" class="text-light">Name</label>
+                           <input type="hidden" name="id" value="">
+                           <input type="text" name="name" value="" placeholder="AdminName">
+                       </div>
+                       <div class="form-group">
+                          <label for="text" class="text-light">Description</label>
+                          <textarea  rows="10" cols="30"></textarea>
+                        </div>
+                       <div class="form-group">
+                          <label for="lalitude" class="text-light">Latitude</label>
+                          <input type="hidden" name="id" value="">
+                          <input type="text" name="lalitude" value="" placeholder="0.000000">
+                       </div>
+                       <div class="form-group">
+                          <label for="longitude" class="text-light">Longitude</label>
+                          <input type="hidden" name="id" value="">
+                          <input type="text" name="longitude" value="" placeholder="0.000000">
+                       </div>
+                       <div class="form-group">
+                          <label for="adresse" class="text-light">Adress</label>
+                          <input type="hidden" name="id" value="">
+                          <input type="text" name="adresse" value="" placeholder="av-vil-cp">
+                       </div>
+                       <div class="form-group">
+                          <label for="sector" class="text-light">Sector</label>
+                          <div class="radio inline">
+                            <input type="radio" id="radio-2" name="sector" value="Public"> 
+                            <label for="radio-2" class="radio-label">Public</label>
+                          </div>
+                          <div class="radio inline">
+                            <input type="radio" id="radio-3" name="sector" value="Private"> 
+                            <label for="radio-3" class="radio-label">Private</label>
+                          </div>
+                        </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn text-dark update">Save</button>
+                    </div>
+                    </div>
+                   
+               </form>
+           </div>
+       </main>
+    <!--/Main Site-->
+</body>
+</html>
